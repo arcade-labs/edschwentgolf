@@ -1,0 +1,169 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e4]:
+      - link "Ed Schwent Golf" [ref=e5] [cursor=pointer]:
+        - /url: "#"
+      - generic [ref=e6]:
+        - link "About" [ref=e7] [cursor=pointer]:
+          - /url: "#about"
+        - link "Method" [ref=e8] [cursor=pointer]:
+          - /url: "#method"
+        - link "Book" [ref=e9] [cursor=pointer]:
+          - /url: "#book"
+      - link "Book a Lesson" [ref=e10] [cursor=pointer]:
+        - /url: "#book"
+        - text: Book a Lesson
+        - img [ref=e11]
+  - generic [ref=e15]:
+    - generic [ref=e16]:
+      - generic [ref=e19]: Gateway PGA Teacher of the Year
+      - heading "Your game, reimagined." [level=1] [ref=e20]:
+        - text: Your game,
+        - text: reimagined.
+      - paragraph [ref=e21]: "Personalized golf instruction with Ed Schwent, Missouri's #2 ranked teacher. Where fundamentals meet modern coaching."
+      - generic [ref=e22]:
+        - link "Book a Lesson" [ref=e23] [cursor=pointer]:
+          - /url: "#book"
+          - text: Book a Lesson
+          - img [ref=e24]
+        - link "Meet Ed" [ref=e26] [cursor=pointer]:
+          - /url: "#about"
+      - generic [ref=e27]:
+        - generic [ref=e28]:
+          - paragraph [ref=e29]: "#2"
+          - paragraph [ref=e30]: In Missouri
+        - generic [ref=e32]:
+          - paragraph [ref=e33]: "2021"
+          - paragraph [ref=e34]: PGA TOTY
+        - generic [ref=e36]:
+          - paragraph [ref=e37]: 11+
+          - paragraph [ref=e38]: Years
+    - generic [ref=e40]:
+      - generic [ref=e42]:
+        - img [ref=e43]
+        - generic [ref=e45]: "#2 in Missouri"
+      - generic [ref=e47]:
+        - img [ref=e48]
+        - generic [ref=e50]: PGA TOTY 2021
+      - generic [ref=e52]:
+        - generic [ref=e53]: 11+
+        - generic [ref=e54]: Years
+      - generic [ref=e58]:
+        - img [ref=e60]
+        - paragraph [ref=e62]: Photo or Video
+  - generic [ref=e65]:
+    - generic [ref=e67]:
+      - generic [ref=e69]:
+        - img [ref=e70]
+        - generic [ref=e72]: SLU Coach
+      - generic [ref=e74]:
+        - img [ref=e75]
+        - generic [ref=e77]: All Levels
+      - generic [ref=e79]:
+        - img [ref=e80]
+        - generic [ref=e82]: 3 Clubs
+      - generic [ref=e85]:
+        - img [ref=e87]
+        - paragraph [ref=e89]: Photo of Ed
+    - generic [ref=e90]:
+      - generic [ref=e92]: About Ed
+      - heading "Decades of mastery, one swing at a time." [level=2] [ref=e93]:
+        - text: Decades of mastery,
+        - text: one swing at a time.
+      - paragraph [ref=e94]: One of the most respected golf professionals in the St. Louis area. Ed brings decades of experience to every lesson at Old Hickory Golf Club.
+      - generic [ref=e95]:
+        - generic [ref=e96]:
+          - img [ref=e98]
+          - generic [ref=e100]:
+            - paragraph [ref=e101]: Saint Louis University Coach
+            - paragraph [ref=e102]: Former collegiate golf coach with a track record of developing competitive players.
+        - generic [ref=e103]:
+          - img [ref=e105]
+          - generic [ref=e107]:
+            - paragraph [ref=e108]: "Golf Digest #2 in Missouri"
+            - paragraph [ref=e109]: Ranked across seven consecutive editions (2015 to 2022) of Golf Digest's Best Teachers.
+        - generic [ref=e110]:
+          - img [ref=e112]
+          - generic [ref=e114]:
+            - paragraph [ref=e115]: Every Level Welcome
+            - paragraph [ref=e116]: From first-time players to competitive golfers chasing a breakthrough. Ed meets you where you are.
+  - generic [ref=e121]:
+    - generic [ref=e122]:
+      - generic [ref=e124]: The Method
+      - heading "Every part of your game, covered." [level=2] [ref=e125]:
+        - text: Every part of
+        - text: your game, covered.
+    - generic [ref=e126]:
+      - generic [ref=e127]:
+        - generic [ref=e128]:
+          - img [ref=e130]
+          - heading "Full Swing" [level=3] [ref=e132]
+          - paragraph [ref=e133]: Build a consistent, powerful swing with fundamentals that last a lifetime. From grip to follow through, every detail refined.
+        - generic [ref=e134]: Most Popular
+      - generic [ref=e135]:
+        - img [ref=e137]
+        - heading "Short Game" [level=3] [ref=e140]
+        - paragraph [ref=e141]: Chipping, pitching, and bunker play. Where strokes are saved.
+      - generic [ref=e142]:
+        - img [ref=e144]
+        - heading "Mental Game" [level=3] [ref=e146]
+        - paragraph [ref=e147]: Focus, course management, and confidence under pressure.
+      - generic [ref=e148]:
+        - img [ref=e150]
+        - heading "Fitness" [level=3] [ref=e153]
+        - paragraph [ref=e154]: Golf-specific mobility and strength for your full potential.
+      - generic [ref=e155]:
+        - img [ref=e157]
+        - heading "Video & Online" [level=3] [ref=e159]
+        - paragraph [ref=e160]: Remote lessons and video swing analysis from anywhere.
+  - generic [ref=e162]:
+    - generic [ref=e163]:
+      - generic [ref=e165]: Gallery
+      - heading "On the course." [level=2] [ref=e166]
+    - generic [ref=e167]:
+      - generic [ref=e170]:
+        - img [ref=e171]
+        - paragraph [ref=e173]: Photo 1
+      - generic [ref=e176]:
+        - img [ref=e177]
+        - paragraph [ref=e179]: Photo 2
+      - generic [ref=e182]:
+        - img [ref=e183]
+        - paragraph [ref=e185]: Photo 3
+    - paragraph [ref=e186]:
+      - text: Add images to
+      - code [ref=e187]: galleryImages
+      - text: to activate the slider
+  - generic [ref=e189]:
+    - generic [ref=e190]:
+      - generic [ref=e192]: Schedule
+      - heading "Ready to level up?" [level=2] [ref=e193]
+      - paragraph [ref=e194]: Pick a time that works. Lessons at Old Hickory Golf Club in St. Peters, MO. Online sessions also available.
+    - iframe [ref=e196]:
+      
+  - contentinfo [ref=e197]:
+    - generic [ref=e198]:
+      - generic [ref=e199]:
+        - generic [ref=e200]:
+          - paragraph [ref=e201]: Ed Schwent Golf
+          - paragraph [ref=e202]: Gateway PGA Teacher of the Year. Golf Digest top-ranked instructor. Your game, reimagined.
+        - generic [ref=e203]:
+          - heading "Location" [level=3] [ref=e204]
+          - paragraph [ref=e205]:
+            - text: Old Hickory Golf Club
+            - text: St. Peters, MO 63304
+        - generic [ref=e206]:
+          - heading "Get in Touch" [level=3] [ref=e207]
+          - generic [ref=e208]:
+            - link "(314) 323-0003" [ref=e209] [cursor=pointer]:
+              - /url: tel:314-323-0003
+              - img [ref=e211]
+              - text: (314) 323-0003
+            - link "Ed@edschwentgolf.com" [ref=e213] [cursor=pointer]:
+              - /url: mailto:Ed@edschwentgolf.com
+              - img [ref=e215]
+              - text: Ed@edschwentgolf.com
+      - generic [ref=e217]:
+        - paragraph [ref=e218]: © 2026 Ed Schwent Golf. All rights reserved.
+        - link "Back to top" [ref=e219] [cursor=pointer]:
+          - /url: "#"
