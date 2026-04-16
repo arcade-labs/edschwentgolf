@@ -1,0 +1,10 @@
+runConfig:
+  minInstances: 0
+
+env:
+  - variable: HOST
+    value: "0.0.0.0"
+    availability: [RUNTIME]
+  - variable: PORT
+    value: "8080"
+    availability: [RUNTIME]
