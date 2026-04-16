@@ -1,6 +1,13 @@
 {
-  "apphosting": {
-    "backendId": "edschwentgolf",
-    "rootDir": "."
+  "hosting": {
+    "site": "edschwentgolf",
+    "public": "dist",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
   }
 }
