@@ -2,7 +2,10 @@ node_modules/
 dist/
 .astro/
 .claude/
+.firebase/
 CLAUDE.md
 **/PLAN*.md
 **/PROGRESS*.md
 **/.env
+ed-photo-video/
+
