@@ -629,7 +629,7 @@ const otherHref = variant === 'A' ? '/b' : '/';
 <!-- Book (shared) -->
 <section id="book" class="pt-4 pb-12 sm:pt-6 sm:pb-16 px-4 sm:px-6 lg:px-8">
   <div class="mx-auto max-w-4xl">
-    <div class="text-center mb-2">
+    <div class="text-center mb-8 sm:mb-10">
       <div class="inline-flex items-center gap-2 glass-card rounded-full px-4 py-2 mb-5">
         <span class="text-xs font-semibold text-forest-700 uppercase tracking-wider">Schedule</span>
       </div>
@@ -638,7 +638,11 @@ const otherHref = variant === 'A' ? '/b' : '/';
         Pick a time that works. Lessons at Old Hickory Golf Club in St. Peters, MO. Online sessions also available.
       </p>
     </div>
-    <div class="calendly-inline-widget -mt-4 sm:-mt-6" data-url="https://calendly.com/coach-golfsenseitraining?primary_color=239436&hide_gdpr_banner=1" style="min-width:320px;width:100%;height:680px;"></div>
+    <div
+      class="calendly-inline-widget min-h-[85vh] sm:min-h-[75vh]"
+      data-url="https://calendly.com/coach-golfsenseitraining?primary_color=239436&hide_gdpr_banner=1&hide_landing_page_details=1&hide_event_type_details=1"
+      style="min-width:320px;width:100%;"
+    ></div>
   </div>
 </section>
 
@@ -725,3 +729,16 @@ const otherHref = variant === 'A' ? '/b' : '/';
 </a>
 
 <script is:inline src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<script is:inline>
+  (() => {
+    const isCalendlyEvent = (e) => typeof e.data === 'object' && e.data !== null && typeof e.data.event === 'string' && e.data.event.startsWith('calendly.');
+    window.addEventListener('message', (e) => {
+      if (e.origin !== 'https://calendly.com') return;
+      if (!isCalendlyEvent(e)) return;
+      if (e.data.event === 'calendly.page_height' && e.data.payload && e.data.payload.height) {
+        const widget = document.querySelector('.calendly-inline-widget');
+        if (widget) widget.style.height = e.data.payload.height;
+      }
+    });
+  })();
+</script>
