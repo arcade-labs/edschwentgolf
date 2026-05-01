@@ -196,10 +196,22 @@ const otherHref = variant === 'A' ? '/b' : '/';
     </div>
   </section>
 
-  <!-- About (side-by-side flipped) -->
+  <!-- About (centered header + 2-col + supporting cards row) -->
   <section id="about" class="py-16 sm:py-24 px-4 sm:px-6 lg:px-8">
     <div class="mx-auto max-w-7xl">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+      <!-- Centered section header -->
+      <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+        <div class="inline-flex items-center gap-2 glass-card rounded-full px-4 py-2 mb-6">
+          <span class="text-xs font-semibold text-forest-700 uppercase tracking-wider">About Ed</span>
+        </div>
+        <h2 class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-[1.05]">
+          Decades of mastery,<br />
+          <span class="text-gradient">one swing at a time.</span>
+        </h2>
+      </div>
+
+      <!-- Image + bio + short award list -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-start">
         <!-- Media LEFT -->
         <div class="relative order-last lg:order-first">
           <div class="absolute top-6 -left-5 z-10 glass-card rounded-2xl px-4 py-2.5 hidden sm:block animate-float" style="animation-delay: 0.4s; transform: rotate(-4deg);">
@@ -225,7 +237,7 @@ const otherHref = variant === 'A' ? '/b' : '/';
             </div>
           </div>
 
-          <div class="media-frame float-shadow aspect-video">
+          <div class="media-frame float-shadow aspect-[4/5] sm:aspect-[3/4] lg:aspect-[4/5]">
             <img src="/images/ed-headshot.jpg" alt="Ed Schwent" loading="lazy" />
           </div>
 
@@ -251,16 +263,8 @@ const otherHref = variant === 'A' ? '/b' : '/';
           </div>
         </div>
 
-        <!-- Content RIGHT -->
+        <!-- Content RIGHT: bio + 3 short award bullets -->
         <div class="max-w-xl mx-auto lg:mx-0 text-center lg:text-left">
-          <div class="inline-flex items-center gap-2 glass-card rounded-full px-4 py-2 mb-6">
-            <span class="text-xs font-semibold text-forest-700 uppercase tracking-wider">About Ed</span>
-          </div>
-          <h2 class="font-display text-4xl sm:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-            Decades of mastery,<br />
-            <span class="text-gradient">one swing at a time.</span>
-          </h2>
-
           <p class="text-gray-900 leading-relaxed text-lg mb-5">
             As a tournament player, Ed reached the highest levels of St. Louis golf, ranking among the top amateurs and professionals in the area. Three decades of coaching followed, with stops at Saint Louis University and head-pro posts at The Missouri Bluffs and Gateway National.
           </p>
@@ -268,16 +272,16 @@ const otherHref = variant === 'A' ? '/b' : '/';
             Today, Old Hickory Golf Club is home to the <span class="font-semibold text-forest-700">Ed Schwent Golf Academy</span>, where Ed works one-on-one with a roster of students that ranges from first-time players to elite juniors chasing tournament wins.
           </p>
 
-          <div class="space-y-5 text-left inline-block lg:block">
+          <div class="space-y-4 text-left inline-block lg:block">
             <div class="flex gap-4">
               <div class="w-10 h-10 rounded-xl bg-forest-100 flex-shrink-0 flex items-center justify-center mt-0.5">
                 <svg class="h-5 w-5 text-forest-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 0 1 3 3h-15a3 3 0 0 1 3-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 0 1-.982-3.172M9.497 14.25a7.454 7.454 0 0 0 .981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 0 0 7.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M18.75 4.236c.982.143 1.954.317 2.916.52A6.003 6.003 0 0 1 16.27 9.728M18.75 4.236V4.5c0 2.108-.966 3.99-2.48 5.228m0 0a6.02 6.02 0 0 1-7.54 0" />
                 </svg>
               </div>
               <div>
-                <p class="font-semibold text-gray-900">Saint Louis University Coach</p>
-                <p class="text-gray-900 text-sm">Former collegiate golf coach with a track record of developing competitive players.</p>
+                <p class="font-semibold text-gray-900">PGA Gateway Teacher of the Year, 2021</p>
+                <p class="text-gray-900 text-sm">Top teaching professional in the Gateway Section.</p>
               </div>
             </div>
             <div class="flex gap-4">
@@ -288,18 +292,7 @@ const otherHref = variant === 'A' ? '/b' : '/';
               </div>
               <div>
                 <p class="font-semibold text-gray-900">Golf Digest #2 in Missouri</p>
-                <p class="text-gray-900 text-sm">Ranked across seven consecutive editions (2015 to 2022) of Golf Digest's Best Teachers.</p>
-              </div>
-            </div>
-            <div class="flex gap-4">
-              <div class="w-10 h-10 rounded-xl bg-forest-100 flex-shrink-0 flex items-center justify-center mt-0.5">
-                <svg class="h-5 w-5 text-forest-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 0 1 3 3h-15a3 3 0 0 1 3-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 0 1-.982-3.172M9.497 14.25a7.454 7.454 0 0 0 .981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 0 0 7.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M18.75 4.236c.982.143 1.954.317 2.916.52A6.003 6.003 0 0 1 16.27 9.728M18.75 4.236V4.5c0 2.108-.966 3.99-2.48 5.228m0 0a6.02 6.02 0 0 1-7.54 0" />
-                </svg>
-              </div>
-              <div>
-                <p class="font-semibold text-gray-900">PGA Gateway Teacher of the Year, 2021</p>
-                <p class="text-gray-900 text-sm">Recognized by the PGA's Gateway Section as the top teaching professional in the region.</p>
+                <p class="text-gray-900 text-sm">Ranked across seven editions (2015 to 2022) of Best Teachers.</p>
               </div>
             </div>
             <div class="flex gap-4">
@@ -309,22 +302,44 @@ const otherHref = variant === 'A' ? '/b' : '/';
                 </svg>
               </div>
               <div>
-                <p class="font-semibold text-gray-900">50,000+ Private Lessons Taught</p>
-                <p class="text-gray-900 text-sm">Three decades of one-on-one coaching, with thousands of students from juniors to seasoned amateurs.</p>
-              </div>
-            </div>
-            <div class="flex gap-4">
-              <div class="w-10 h-10 rounded-xl bg-forest-100 flex-shrink-0 flex items-center justify-center mt-0.5">
-                <svg class="h-5 w-5 text-forest-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" />
-                </svg>
-              </div>
-              <div>
-                <p class="font-semibold text-gray-900">Every Level Welcome</p>
-                <p class="text-gray-900 text-sm">From first-time players to competitive golfers chasing a breakthrough. Ed meets you where you are.</p>
+                <p class="font-semibold text-gray-900">50,000+ Private Lessons</p>
+                <p class="text-gray-900 text-sm">Three decades of one-on-one coaching across every level.</p>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      <!-- Full-width supporting cards row -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-12 sm:mt-16">
+        <div class="glass-card rounded-2xl p-6">
+          <div class="w-11 h-11 rounded-xl bg-forest-100 flex items-center justify-center mb-4">
+            <svg class="h-5 w-5 text-forest-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342" />
+            </svg>
+          </div>
+          <h3 class="font-display text-lg font-bold text-gray-900 mb-2">Tournament-tested</h3>
+          <p class="text-gray-900 text-sm leading-relaxed">Ranked among the top amateurs and professionals in St. Louis before stepping into coaching full time.</p>
+        </div>
+
+        <div class="glass-card rounded-2xl p-6">
+          <div class="w-11 h-11 rounded-xl bg-forest-100 flex items-center justify-center mb-4">
+            <svg class="h-5 w-5 text-forest-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" />
+            </svg>
+          </div>
+          <h3 class="font-display text-lg font-bold text-gray-900 mb-2">Every level welcome</h3>
+          <p class="text-gray-900 text-sm leading-relaxed">From first-time players to competitive juniors. Lessons tailored to your age, goals, and skill level.</p>
+        </div>
+
+        <div class="glass-card rounded-2xl p-6">
+          <div class="w-11 h-11 rounded-xl bg-forest-100 flex items-center justify-center mb-4">
+            <svg class="h-5 w-5 text-forest-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12 5.5 7.5l3 4.5 3-7 3 7 3-4.5 3.75 4.5M3 16.5h18M3 19.5h18" />
+            </svg>
+          </div>
+          <h3 class="font-display text-lg font-bold text-gray-900 mb-2">Old Hickory home base</h3>
+          <p class="text-gray-900 text-sm leading-relaxed">The Ed Schwent Golf Academy lives at Old Hickory Golf Club in St. Peters, MO — a quick drive from anywhere in the metro.</p>
         </div>
       </div>
     </div>
@@ -540,112 +555,160 @@ const otherHref = variant === 'A' ? '/b' : '/';
   </section>
 )}
 
-<!-- Career venue grid (shared) -->
-<section id="career" class="pt-4 pb-12 sm:pt-8 sm:pb-20 px-4 sm:px-6 lg:px-8">
+<!-- Career timeline (shared) -->
+<section id="career" class="pt-4 pb-16 sm:pt-8 sm:pb-24 px-4 sm:px-6 lg:px-8">
   <div class="mx-auto max-w-6xl">
-    <div class="text-center max-w-2xl mx-auto mb-10 sm:mb-12">
+    <div class="text-center max-w-2xl mx-auto mb-12 sm:mb-16">
       <div class="inline-flex items-center gap-2 glass-card rounded-full px-4 py-2 mb-5">
         <span class="text-xs font-semibold text-forest-700 uppercase tracking-wider">Career</span>
       </div>
       <h2 class="font-display text-3xl sm:text-4xl font-bold text-gray-900 leading-tight">
-        Three decades, <span class="text-gradient">four homes.</span>
+        Four homes, <span class="text-gradient">one craft.</span>
       </h2>
     </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-      <!-- Saint Louis University -->
-      <div class="group glass-card rounded-2xl p-6 flex flex-col">
-        <div class="flex items-start justify-between mb-5">
-          <div class="w-10 h-10 rounded-xl bg-forest-100 flex items-center justify-center">
-            <svg class="h-5 w-5 text-forest-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342" />
-            </svg>
-          </div>
-          <span class="text-[10px] font-bold text-forest-500 uppercase tracking-widest">01</span>
-        </div>
-        <p class="text-[11px] font-bold text-forest-600 uppercase tracking-wider mb-2">Coach</p>
-        <h3 class="font-display text-lg font-bold text-gray-900 leading-tight mb-2">Saint Louis University</h3>
-        <p class="text-gray-900 text-sm leading-relaxed">Collegiate coaching role developing competitive players.</p>
-      </div>
+    <div class="relative">
+      <!-- Vertical line: mobile-left, desktop-center -->
+      <div class="absolute left-5 top-0 bottom-0 w-0.5 bg-forest-200 lg:left-1/2 lg:-translate-x-px" aria-hidden="true"></div>
 
-      <!-- The Missouri Bluffs -->
-      <div class="group glass-card rounded-2xl p-6 flex flex-col">
-        <div class="flex items-start justify-between mb-5">
-          <div class="w-10 h-10 rounded-xl bg-forest-100 flex items-center justify-center">
-            <svg class="h-5 w-5 text-forest-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z" />
-            </svg>
+      <ol class="space-y-10 lg:space-y-14">
+        <!-- 01 · Saint Louis University · LEFT on desktop -->
+        <li class="relative grid grid-cols-1 items-center lg:grid-cols-[1fr_auto_1fr] lg:gap-10">
+          <div class="hidden lg:flex lg:justify-end">
+            <div class="w-full max-w-sm glass-card rounded-2xl p-6">
+              <p class="text-[11px] font-bold text-forest-600 uppercase tracking-wider mb-2">Coach</p>
+              <h3 class="font-display text-xl font-bold text-gray-900 leading-tight mb-2">Saint Louis University</h3>
+              <p class="text-gray-900 text-sm leading-relaxed">Collegiate coaching role developing competitive players.</p>
+            </div>
           </div>
-          <span class="text-[10px] font-bold text-forest-500 uppercase tracking-widest">02</span>
-        </div>
-        <p class="text-[11px] font-bold text-forest-600 uppercase tracking-wider mb-2">Head Golf Pro</p>
-        <h3 class="font-display text-lg font-bold text-gray-900 leading-tight mb-2">The Missouri Bluffs</h3>
-        <p class="text-gray-900 text-sm leading-relaxed">A Tom Fazio championship course on the Missouri River bluffs.</p>
-      </div>
+          <div class="absolute left-0 z-10 lg:relative lg:left-auto">
+            <div class="flex h-12 w-12 items-center justify-center rounded-full bg-forest-600 font-display text-base font-bold text-white shadow-md ring-4 ring-white">
+              1
+            </div>
+          </div>
+          <div class="hidden lg:block"></div>
+          <div class="pl-16 lg:hidden">
+            <div class="glass-card rounded-2xl p-6">
+              <p class="text-[11px] font-bold text-forest-600 uppercase tracking-wider mb-2">Coach</p>
+              <h3 class="font-display text-xl font-bold text-gray-900 leading-tight mb-2">Saint Louis University</h3>
+              <p class="text-gray-900 text-sm leading-relaxed">Collegiate coaching role developing competitive players.</p>
+            </div>
+          </div>
+        </li>
 
-      <!-- Gateway National -->
-      <div class="group glass-card rounded-2xl p-6 flex flex-col">
-        <div class="flex items-start justify-between mb-5">
-          <div class="w-10 h-10 rounded-xl bg-forest-100 flex items-center justify-center">
-            <svg class="h-5 w-5 text-forest-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3 21h18M3 18h18M3 7v11m18-11v11M5 7l7-3 7 3M9 21V11h6v10" />
-            </svg>
+        <!-- 02 · The Missouri Bluffs · RIGHT on desktop -->
+        <li class="relative grid grid-cols-1 items-center lg:grid-cols-[1fr_auto_1fr] lg:gap-10">
+          <div class="hidden lg:block"></div>
+          <div class="absolute left-0 z-10 lg:relative lg:left-auto">
+            <div class="flex h-12 w-12 items-center justify-center rounded-full bg-forest-600 font-display text-base font-bold text-white shadow-md ring-4 ring-white">
+              2
+            </div>
           </div>
-          <span class="text-[10px] font-bold text-forest-500 uppercase tracking-widest">03</span>
-        </div>
-        <p class="text-[11px] font-bold text-forest-600 uppercase tracking-wider mb-2">Head Golf Pro</p>
-        <h3 class="font-display text-lg font-bold text-gray-900 leading-tight mb-2">Gateway National</h3>
-        <p class="text-gray-900 text-sm leading-relaxed">Premier links-style course just east of St. Louis.</p>
-      </div>
+          <div class="hidden lg:flex lg:justify-start">
+            <div class="w-full max-w-sm glass-card rounded-2xl p-6">
+              <p class="text-[11px] font-bold text-forest-600 uppercase tracking-wider mb-2">Head Golf Pro</p>
+              <h3 class="font-display text-xl font-bold text-gray-900 leading-tight mb-2">The Missouri Bluffs</h3>
+              <p class="text-gray-900 text-sm leading-relaxed">A Tom Fazio championship course on the Missouri River bluffs.</p>
+            </div>
+          </div>
+          <div class="pl-16 lg:hidden">
+            <div class="glass-card rounded-2xl p-6">
+              <p class="text-[11px] font-bold text-forest-600 uppercase tracking-wider mb-2">Head Golf Pro</p>
+              <h3 class="font-display text-xl font-bold text-gray-900 leading-tight mb-2">The Missouri Bluffs</h3>
+              <p class="text-gray-900 text-sm leading-relaxed">A Tom Fazio championship course on the Missouri River bluffs.</p>
+            </div>
+          </div>
+        </li>
 
-      <!-- Old Hickory · Current home -->
-      <div class="group rounded-2xl p-6 flex flex-col text-white" style="background: linear-gradient(135deg, #166534 0%, #14532d 100%); box-shadow: 0 10px 30px -10px rgba(20,83,45,0.45), 0 4px 12px rgba(0,0,0,0.08);">
-        <div class="flex items-start justify-between mb-5">
-          <div class="w-10 h-10 rounded-xl bg-white/15 flex items-center justify-center backdrop-blur-sm">
-            <svg class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12 5.5 7.5l3 4.5 3-7 3 7 3-4.5 3.75 4.5M3 16.5h18M3 19.5h18" />
-            </svg>
+        <!-- 03 · Gateway National · LEFT on desktop -->
+        <li class="relative grid grid-cols-1 items-center lg:grid-cols-[1fr_auto_1fr] lg:gap-10">
+          <div class="hidden lg:flex lg:justify-end">
+            <div class="w-full max-w-sm glass-card rounded-2xl p-6">
+              <p class="text-[11px] font-bold text-forest-600 uppercase tracking-wider mb-2">Head Golf Pro</p>
+              <h3 class="font-display text-xl font-bold text-gray-900 leading-tight mb-2">Gateway National</h3>
+              <p class="text-gray-900 text-sm leading-relaxed">Premier links-style course just east of St. Louis.</p>
+            </div>
           </div>
-          <span class="inline-flex items-center gap-1.5 bg-white/15 backdrop-blur-sm rounded-full px-2.5 py-1">
-            <span class="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></span>
-            <span class="text-[10px] font-bold text-white uppercase tracking-widest">Current</span>
-          </span>
-        </div>
-        <p class="text-[11px] font-bold text-white/80 uppercase tracking-wider mb-2">Head Golf Pro · 10+ yrs</p>
-        <h3 class="font-display text-lg font-bold text-white leading-tight mb-2">Old Hickory Golf Club</h3>
-        <p class="text-white/90 text-sm leading-relaxed">Home of the Ed Schwent Golf Academy in St. Peters, MO.</p>
-      </div>
+          <div class="absolute left-0 z-10 lg:relative lg:left-auto">
+            <div class="flex h-12 w-12 items-center justify-center rounded-full bg-forest-600 font-display text-base font-bold text-white shadow-md ring-4 ring-white">
+              3
+            </div>
+          </div>
+          <div class="hidden lg:block"></div>
+          <div class="pl-16 lg:hidden">
+            <div class="glass-card rounded-2xl p-6">
+              <p class="text-[11px] font-bold text-forest-600 uppercase tracking-wider mb-2">Head Golf Pro</p>
+              <h3 class="font-display text-xl font-bold text-gray-900 leading-tight mb-2">Gateway National</h3>
+              <p class="text-gray-900 text-sm leading-relaxed">Premier links-style course just east of St. Louis.</p>
+            </div>
+          </div>
+        </li>
+
+        <!-- 04 · Old Hickory · RIGHT on desktop · Current accent -->
+        <li class="relative grid grid-cols-1 items-center lg:grid-cols-[1fr_auto_1fr] lg:gap-10">
+          <div class="hidden lg:block"></div>
+          <div class="absolute left-0 z-10 lg:relative lg:left-auto">
+            <div class="flex h-12 w-12 items-center justify-center rounded-full font-display text-base font-bold text-white shadow-md ring-4 ring-white" style="background: linear-gradient(135deg, #16a34a 0%, #166534 100%);">
+              4
+            </div>
+          </div>
+          <div class="hidden lg:flex lg:justify-start">
+            <div class="w-full max-w-sm rounded-2xl p-6 text-white" style="background: linear-gradient(135deg, #166534 0%, #14532d 100%); box-shadow: 0 14px 36px -12px rgba(20,83,45,0.45), 0 4px 12px rgba(0,0,0,0.08);">
+              <div class="flex items-center gap-2 mb-3">
+                <span class="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></span>
+                <span class="text-[10px] font-bold text-white uppercase tracking-widest">Current · 10+ yrs</span>
+              </div>
+              <p class="text-[11px] font-bold text-white/80 uppercase tracking-wider mb-2">Head Golf Pro</p>
+              <h3 class="font-display text-xl font-bold text-white leading-tight mb-2">Old Hickory Golf Club</h3>
+              <p class="text-white/90 text-sm leading-relaxed">Home of the Ed Schwent Golf Academy in St. Peters, MO.</p>
+            </div>
+          </div>
+          <div class="pl-16 lg:hidden">
+            <div class="rounded-2xl p-6 text-white" style="background: linear-gradient(135deg, #166534 0%, #14532d 100%); box-shadow: 0 14px 36px -12px rgba(20,83,45,0.45), 0 4px 12px rgba(0,0,0,0.08);">
+              <div class="flex items-center gap-2 mb-3">
+                <span class="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></span>
+                <span class="text-[10px] font-bold text-white uppercase tracking-widest">Current · 10+ yrs</span>
+              </div>
+              <p class="text-[11px] font-bold text-white/80 uppercase tracking-wider mb-2">Head Golf Pro</p>
+              <h3 class="font-display text-xl font-bold text-white leading-tight mb-2">Old Hickory Golf Club</h3>
+              <p class="text-white/90 text-sm leading-relaxed">Home of the Ed Schwent Golf Academy in St. Peters, MO.</p>
+            </div>
+          </div>
+        </li>
+      </ol>
     </div>
   </div>
 </section>
 
-<!-- Philosophy pull-quote (shared) -->
-<section id="philosophy" class="pb-12 sm:pb-20 px-4 sm:px-6 lg:px-8">
+<!-- Philosophy pull-quote (shared) — bg image + dark overlay -->
+<section id="philosophy" class="pb-16 sm:pb-24 px-4 sm:px-6 lg:px-8">
   <div class="mx-auto max-w-5xl">
-    <div class="relative glass rounded-[28px] px-7 py-10 sm:px-14 sm:py-14 overflow-hidden">
-      <!-- Soft accent corner -->
-      <div class="absolute -top-16 -right-16 w-56 h-56 rounded-full" style="background: radial-gradient(circle, rgba(34,197,94,0.18) 0%, transparent 70%);"></div>
+    <div class="relative rounded-[28px] overflow-hidden float-shadow">
+      <!-- Background image -->
+      <img src="/images/golf-bg.jpg" alt="" aria-hidden="true" class="absolute inset-0 w-full h-full object-cover" loading="lazy" />
+      <!-- Forest gradient overlay for legibility -->
+      <div class="absolute inset-0" style="background: linear-gradient(135deg, rgba(20,83,45,0.92) 0%, rgba(22,101,52,0.85) 50%, rgba(20,83,45,0.78) 100%);" aria-hidden="true"></div>
 
-      <div class="relative">
-        <div class="inline-flex items-center gap-2 glass-card rounded-full px-4 py-2 mb-6">
-          <span class="text-xs font-semibold text-forest-700 uppercase tracking-wider">Philosophy</span>
+      <div class="relative px-7 py-12 sm:px-14 sm:py-16">
+        <div class="inline-flex items-center gap-2 rounded-full px-4 py-2 mb-6" style="background:rgba(255,255,255,0.14);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,0.22);">
+          <span class="text-xs font-semibold text-white uppercase tracking-wider">Philosophy</span>
         </div>
 
-        <svg class="h-9 w-9 text-forest-300 mb-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+        <svg class="h-10 w-10 text-white/40 mb-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
           <path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/>
         </svg>
 
-        <p class="font-display text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 leading-[1.2] mb-6 max-w-3xl">
-          I have just as much fun watching a beginner hit the ball in the air for the first time as I do watching one of my elite junior players <span class="text-gradient">win a big tournament.</span>
+        <p class="font-display text-2xl sm:text-3xl lg:text-4xl font-bold text-white leading-[1.2] mb-7 max-w-3xl" style="text-shadow: 0 2px 20px rgba(0,0,0,0.35);">
+          I have just as much fun watching a beginner hit the ball in the air for the first time as I do watching one of my elite junior players <span class="text-forest-200">win a big tournament.</span>
         </p>
 
         <div class="flex items-center gap-3">
-          <div class="w-10 h-10 rounded-full bg-forest-100 flex items-center justify-center">
-            <span class="text-sm font-bold text-forest-700">E</span>
+          <div class="w-10 h-10 rounded-full flex items-center justify-center" style="background:rgba(255,255,255,0.18);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.28);">
+            <span class="text-sm font-bold text-white">E</span>
           </div>
           <div>
-            <p class="text-sm font-semibold text-gray-900">Ed Schwent</p>
-            <p class="text-xs text-forest-700 font-semibold uppercase tracking-wider">Gateway PGA Teacher of the Year, 2021</p>
+            <p class="text-sm font-semibold text-white">Ed Schwent</p>
+            <p class="text-xs text-white/80 font-semibold uppercase tracking-wider">Gateway PGA Teacher of the Year, 2021</p>
           </div>
         </div>
       </div>
