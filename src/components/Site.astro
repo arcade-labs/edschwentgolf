@@ -211,7 +211,7 @@ const otherHref = variant === 'A' ? '/b' : '/';
       </div>
 
       <!-- Image + bio + short award list -->
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-start">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
         <!-- Media LEFT -->
         <div class="relative order-last lg:order-first">
           <div class="absolute top-6 -left-5 z-10 glass-card rounded-2xl px-4 py-2.5 hidden sm:block animate-float" style="animation-delay: 0.4s; transform: rotate(-4deg);">
@@ -237,7 +237,7 @@ const otherHref = variant === 'A' ? '/b' : '/';
             </div>
           </div>
 
-          <div class="media-frame float-shadow aspect-[4/5] sm:aspect-[3/4] lg:aspect-[4/5]">
+          <div class="media-frame float-shadow aspect-[4/3] lg:aspect-[4/3]">
             <img src="/images/ed-headshot.jpg" alt="Ed Schwent" loading="lazy" />
           </div>
 
@@ -551,6 +551,39 @@ const otherHref = variant === 'A' ? '/b' : '/';
           </div>
         </div>
       </div>
+
+      <!-- Full-width supporting cards row (matches Layout A) -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-12 sm:mt-16 max-w-5xl mx-auto">
+        <div class="glass-card rounded-2xl p-6">
+          <div class="w-11 h-11 rounded-xl bg-forest-100 flex items-center justify-center mb-4">
+            <svg class="h-5 w-5 text-forest-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342" />
+            </svg>
+          </div>
+          <h3 class="font-display text-lg font-bold text-gray-900 mb-2">Tournament-tested</h3>
+          <p class="text-gray-900 text-sm leading-relaxed">Ranked among the top amateurs and professionals in St. Louis before stepping into coaching full time.</p>
+        </div>
+
+        <div class="glass-card rounded-2xl p-6">
+          <div class="w-11 h-11 rounded-xl bg-forest-100 flex items-center justify-center mb-4">
+            <svg class="h-5 w-5 text-forest-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" />
+            </svg>
+          </div>
+          <h3 class="font-display text-lg font-bold text-gray-900 mb-2">Every level welcome</h3>
+          <p class="text-gray-900 text-sm leading-relaxed">From first-time players to competitive juniors. Lessons tailored to your age, goals, and skill level.</p>
+        </div>
+
+        <div class="glass-card rounded-2xl p-6">
+          <div class="w-11 h-11 rounded-xl bg-forest-100 flex items-center justify-center mb-4">
+            <svg class="h-5 w-5 text-forest-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12 5.5 7.5l3 4.5 3-7 3 7 3-4.5 3.75 4.5M3 16.5h18M3 19.5h18" />
+            </svg>
+          </div>
+          <h3 class="font-display text-lg font-bold text-gray-900 mb-2">Old Hickory home base</h3>
+          <p class="text-gray-900 text-sm leading-relaxed">The Ed Schwent Golf Academy lives at Old Hickory Golf Club in St. Peters, MO — a quick drive from anywhere in the metro.</p>
+        </div>
+      </div>
     </div>
   </section>
 )}
@@ -569,26 +602,35 @@ const otherHref = variant === 'A' ? '/b' : '/';
 
     <div class="relative">
       <!-- Vertical line: mobile-left, desktop-center -->
-      <div class="absolute left-5 top-0 bottom-0 w-0.5 bg-forest-200 lg:left-1/2 lg:-translate-x-px" aria-hidden="true"></div>
+      <div class="absolute left-7 top-0 bottom-0 w-0.5 bg-forest-200 lg:left-1/2 lg:-translate-x-px" aria-hidden="true"></div>
 
       <ol class="space-y-10 lg:space-y-14">
-        <!-- 01 · Saint Louis University · LEFT on desktop -->
+        <!-- 1 · Saint Louis University · LEFT on desktop -->
         <li class="relative grid grid-cols-1 items-center lg:grid-cols-[1fr_auto_1fr] lg:gap-10">
           <div class="hidden lg:flex lg:justify-end">
             <div class="w-full max-w-sm glass-card rounded-2xl p-6">
+              <div class="flex items-center gap-2 mb-3">
+                <span class="w-1.5 h-1.5 rounded-full bg-forest-500"></span>
+                <span class="text-[10px] font-bold text-forest-700 uppercase tracking-widest">Era 1</span>
+              </div>
               <p class="text-[11px] font-bold text-forest-600 uppercase tracking-wider mb-2">Coach</p>
               <h3 class="font-display text-xl font-bold text-gray-900 leading-tight mb-2">Saint Louis University</h3>
               <p class="text-gray-900 text-sm leading-relaxed">Collegiate coaching role developing competitive players.</p>
             </div>
           </div>
-          <div class="absolute left-0 z-10 lg:relative lg:left-auto">
-            <div class="flex h-12 w-12 items-center justify-center rounded-full bg-forest-600 font-display text-base font-bold text-white shadow-md ring-4 ring-white">
-              1
+          <div class="absolute -left-1 z-10 lg:relative lg:left-auto">
+            <div class="flex h-16 w-16 flex-col items-center justify-center rounded-full bg-forest-600 font-display text-white shadow-md ring-4 ring-white">
+              <span class="text-[9px] font-bold uppercase tracking-widest text-white/70 leading-none mb-0.5">Era</span>
+              <span class="text-base font-bold leading-none">1</span>
             </div>
           </div>
           <div class="hidden lg:block"></div>
-          <div class="pl-16 lg:hidden">
+          <div class="pl-20 lg:hidden">
             <div class="glass-card rounded-2xl p-6">
+              <div class="flex items-center gap-2 mb-3">
+                <span class="w-1.5 h-1.5 rounded-full bg-forest-500"></span>
+                <span class="text-[10px] font-bold text-forest-700 uppercase tracking-widest">Era 1</span>
+              </div>
               <p class="text-[11px] font-bold text-forest-600 uppercase tracking-wider mb-2">Coach</p>
               <h3 class="font-display text-xl font-bold text-gray-900 leading-tight mb-2">Saint Louis University</h3>
               <p class="text-gray-900 text-sm leading-relaxed">Collegiate coaching role developing competitive players.</p>
@@ -596,23 +638,32 @@ const otherHref = variant === 'A' ? '/b' : '/';
           </div>
         </li>
 
-        <!-- 02 · The Missouri Bluffs · RIGHT on desktop -->
+        <!-- 2 · The Missouri Bluffs · RIGHT on desktop -->
         <li class="relative grid grid-cols-1 items-center lg:grid-cols-[1fr_auto_1fr] lg:gap-10">
           <div class="hidden lg:block"></div>
-          <div class="absolute left-0 z-10 lg:relative lg:left-auto">
-            <div class="flex h-12 w-12 items-center justify-center rounded-full bg-forest-600 font-display text-base font-bold text-white shadow-md ring-4 ring-white">
-              2
+          <div class="absolute -left-1 z-10 lg:relative lg:left-auto">
+            <div class="flex h-16 w-16 flex-col items-center justify-center rounded-full bg-forest-600 font-display text-white shadow-md ring-4 ring-white">
+              <span class="text-[9px] font-bold uppercase tracking-widest text-white/70 leading-none mb-0.5">Era</span>
+              <span class="text-base font-bold leading-none">2</span>
             </div>
           </div>
           <div class="hidden lg:flex lg:justify-start">
             <div class="w-full max-w-sm glass-card rounded-2xl p-6">
+              <div class="flex items-center gap-2 mb-3">
+                <span class="w-1.5 h-1.5 rounded-full bg-forest-500"></span>
+                <span class="text-[10px] font-bold text-forest-700 uppercase tracking-widest">Era 2</span>
+              </div>
               <p class="text-[11px] font-bold text-forest-600 uppercase tracking-wider mb-2">Head Golf Pro</p>
               <h3 class="font-display text-xl font-bold text-gray-900 leading-tight mb-2">The Missouri Bluffs</h3>
               <p class="text-gray-900 text-sm leading-relaxed">A Tom Fazio championship course on the Missouri River bluffs.</p>
             </div>
           </div>
-          <div class="pl-16 lg:hidden">
+          <div class="pl-20 lg:hidden">
             <div class="glass-card rounded-2xl p-6">
+              <div class="flex items-center gap-2 mb-3">
+                <span class="w-1.5 h-1.5 rounded-full bg-forest-500"></span>
+                <span class="text-[10px] font-bold text-forest-700 uppercase tracking-widest">Era 2</span>
+              </div>
               <p class="text-[11px] font-bold text-forest-600 uppercase tracking-wider mb-2">Head Golf Pro</p>
               <h3 class="font-display text-xl font-bold text-gray-900 leading-tight mb-2">The Missouri Bluffs</h3>
               <p class="text-gray-900 text-sm leading-relaxed">A Tom Fazio championship course on the Missouri River bluffs.</p>
@@ -620,23 +671,32 @@ const otherHref = variant === 'A' ? '/b' : '/';
           </div>
         </li>
 
-        <!-- 03 · Gateway National · LEFT on desktop -->
+        <!-- 3 · Gateway National · LEFT on desktop -->
         <li class="relative grid grid-cols-1 items-center lg:grid-cols-[1fr_auto_1fr] lg:gap-10">
           <div class="hidden lg:flex lg:justify-end">
             <div class="w-full max-w-sm glass-card rounded-2xl p-6">
+              <div class="flex items-center gap-2 mb-3">
+                <span class="w-1.5 h-1.5 rounded-full bg-forest-500"></span>
+                <span class="text-[10px] font-bold text-forest-700 uppercase tracking-widest">Era 3</span>
+              </div>
               <p class="text-[11px] font-bold text-forest-600 uppercase tracking-wider mb-2">Head Golf Pro</p>
               <h3 class="font-display text-xl font-bold text-gray-900 leading-tight mb-2">Gateway National</h3>
               <p class="text-gray-900 text-sm leading-relaxed">Premier links-style course just east of St. Louis.</p>
             </div>
           </div>
-          <div class="absolute left-0 z-10 lg:relative lg:left-auto">
-            <div class="flex h-12 w-12 items-center justify-center rounded-full bg-forest-600 font-display text-base font-bold text-white shadow-md ring-4 ring-white">
-              3
+          <div class="absolute -left-1 z-10 lg:relative lg:left-auto">
+            <div class="flex h-16 w-16 flex-col items-center justify-center rounded-full bg-forest-600 font-display text-white shadow-md ring-4 ring-white">
+              <span class="text-[9px] font-bold uppercase tracking-widest text-white/70 leading-none mb-0.5">Era</span>
+              <span class="text-base font-bold leading-none">3</span>
             </div>
           </div>
           <div class="hidden lg:block"></div>
-          <div class="pl-16 lg:hidden">
+          <div class="pl-20 lg:hidden">
             <div class="glass-card rounded-2xl p-6">
+              <div class="flex items-center gap-2 mb-3">
+                <span class="w-1.5 h-1.5 rounded-full bg-forest-500"></span>
+                <span class="text-[10px] font-bold text-forest-700 uppercase tracking-widest">Era 3</span>
+              </div>
               <p class="text-[11px] font-bold text-forest-600 uppercase tracking-wider mb-2">Head Golf Pro</p>
               <h3 class="font-display text-xl font-bold text-gray-900 leading-tight mb-2">Gateway National</h3>
               <p class="text-gray-900 text-sm leading-relaxed">Premier links-style course just east of St. Louis.</p>
@@ -644,12 +704,13 @@ const otherHref = variant === 'A' ? '/b' : '/';
           </div>
         </li>
 
-        <!-- 04 · Old Hickory · RIGHT on desktop · Current accent -->
+        <!-- 4 · Old Hickory · RIGHT on desktop · Current accent -->
         <li class="relative grid grid-cols-1 items-center lg:grid-cols-[1fr_auto_1fr] lg:gap-10">
           <div class="hidden lg:block"></div>
-          <div class="absolute left-0 z-10 lg:relative lg:left-auto">
-            <div class="flex h-12 w-12 items-center justify-center rounded-full font-display text-base font-bold text-white shadow-md ring-4 ring-white" style="background: linear-gradient(135deg, #16a34a 0%, #166534 100%);">
-              4
+          <div class="absolute -left-1 z-10 lg:relative lg:left-auto">
+            <div class="flex h-16 w-16 flex-col items-center justify-center rounded-full font-display text-white shadow-md ring-4 ring-white" style="background: linear-gradient(135deg, #16a34a 0%, #166534 100%);">
+              <span class="text-[9px] font-bold uppercase tracking-widest text-white/85 leading-none mb-0.5">Since</span>
+              <span class="text-base font-bold leading-none">2014</span>
             </div>
           </div>
           <div class="hidden lg:flex lg:justify-start">
@@ -663,7 +724,7 @@ const otherHref = variant === 'A' ? '/b' : '/';
               <p class="text-white/90 text-sm leading-relaxed">Home of the Ed Schwent Golf Academy in St. Peters, MO.</p>
             </div>
           </div>
-          <div class="pl-16 lg:hidden">
+          <div class="pl-20 lg:hidden">
             <div class="rounded-2xl p-6 text-white" style="background: linear-gradient(135deg, #166534 0%, #14532d 100%); box-shadow: 0 14px 36px -12px rgba(20,83,45,0.45), 0 4px 12px rgba(0,0,0,0.08);">
               <div class="flex items-center gap-2 mb-3">
                 <span class="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></span>
@@ -684,10 +745,10 @@ const otherHref = variant === 'A' ? '/b' : '/';
 <section id="philosophy" class="pb-16 sm:pb-24 px-4 sm:px-6 lg:px-8">
   <div class="mx-auto max-w-5xl">
     <div class="relative rounded-[28px] overflow-hidden float-shadow">
-      <!-- Background image -->
-      <img src="/images/golf-bg.jpg" alt="" aria-hidden="true" class="absolute inset-0 w-full h-full object-cover" loading="lazy" />
-      <!-- Forest gradient overlay for legibility -->
-      <div class="absolute inset-0" style="background: linear-gradient(135deg, rgba(20,83,45,0.92) 0%, rgba(22,101,52,0.85) 50%, rgba(20,83,45,0.78) 100%);" aria-hidden="true"></div>
+      <!-- Background image (Nano Banana atmospheric fairway) -->
+      <img src="/images/philosophy-bg.jpg" alt="" aria-hidden="true" class="absolute inset-0 w-full h-full object-cover" loading="lazy" />
+      <!-- Forest gradient overlay: darker on the left where the quote text sits, lighter on the right to let the fairway breathe -->
+      <div class="absolute inset-0" style="background: linear-gradient(105deg, rgba(20,83,45,0.92) 0%, rgba(22,101,52,0.82) 45%, rgba(20,83,45,0.55) 100%);" aria-hidden="true"></div>
 
       <div class="relative px-7 py-12 sm:px-14 sm:py-16">
         <div class="inline-flex items-center gap-2 rounded-full px-4 py-2 mb-6" style="background:rgba(255,255,255,0.14);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,0.22);">
