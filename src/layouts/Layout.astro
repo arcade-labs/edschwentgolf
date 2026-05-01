@@ -22,7 +22,18 @@ const { title, description } = Astro.props;
     />
     <title>{title}</title>
   </head>
-  <body class="text-gray-900 antialiased overflow-x-hidden" style="background: radial-gradient(ellipse 1200px 800px at 85% -5%, rgba(34,197,94,0.05) 0%, transparent 70%), #fafafa;">
-    <slot />
+  <body class="text-gray-900 antialiased overflow-x-hidden bg-[#fafafa]">
+    <!-- Soft green cloud field + 5px white grid overlay (only visible where clouds are) -->
+    <div class="pointer-events-none fixed inset-0 z-[1]" aria-hidden="true">
+      <div class="absolute rounded-full" style="width: 50vw; height: 50vw; top: -10%; left: 5%; background: radial-gradient(circle, rgba(34, 197, 94, 0.26) 0%, transparent 60%); filter: blur(100px); opacity: 0.6;"></div>
+      <div class="absolute rounded-full" style="width: 45vw; height: 45vw; top: 18%; right: -2%; background: radial-gradient(circle, rgba(74, 222, 128, 0.22) 0%, transparent 60%); filter: blur(100px); opacity: 0.55;"></div>
+      <div class="absolute rounded-full" style="width: 48vw; height: 48vw; top: 45%; left: -6%; background: radial-gradient(circle, rgba(22, 163, 74, 0.22) 0%, transparent 60%); filter: blur(100px); opacity: 0.55;"></div>
+      <div class="absolute rounded-full" style="width: 42vw; height: 42vw; top: 70%; right: 4%; background: radial-gradient(circle, rgba(16, 185, 129, 0.20) 0%, transparent 60%); filter: blur(100px); opacity: 0.5;"></div>
+      <!-- White grid texture: white-on-white = invisible, white-on-green = visible -->
+      <div class="absolute inset-0" style="background-image: url(&quot;data:image/svg+xml,%3Csvg width='5' height='5' viewBox='0 0 5 5' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 0H0v.5h5zM0 0v5h.5V0z' fill='%23fff' fill-opacity='0.65'/%3E%3C/svg%3E&quot;);"></div>
+    </div>
+    <div class="relative z-[2]">
+      <slot />
+    </div>
   </body>
 </html>
