@@ -1004,74 +1004,78 @@ const { variant, galleryImages } = Astro.props;
           </svg>
         </a>
       </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
-        <a href="https://www.youtube.com/playlist?list=PLORGvOV5T-44KU7B4Fevn2otJCiCqkemO" target="_blank" rel="noopener noreferrer" class="group relative aspect-[4/5] rounded-2xl overflow-hidden float-shadow transition-all hover:-translate-y-1 hover:shadow-2xl hover:shadow-forest-900/20">
-          <img src="/images/sensei/driving.jpg" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-          <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-black/10"></div>
-          <span class="absolute top-4 left-4 inline-flex items-center rounded-full bg-white/15 backdrop-blur-md border border-white/30 px-2.5 py-1 text-[10px] font-bold text-white uppercase tracking-widest">Driving</span>
-          <div class="absolute bottom-0 left-0 right-0 p-5">
-            <h4 class="font-display text-2xl sm:text-3xl font-bold text-white leading-[1.05] mb-1">
-              Hit it<br /><span class="text-forest-300">straighter.</span>
-            </h4>
-            <span class="inline-flex items-center gap-1 text-[11px] font-bold text-white/90 uppercase tracking-widest mt-2 group-hover:text-white transition-colors">
-              Watch playlist
-              <svg class="h-3 w-3 transition-transform group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
+        <!-- Driving -->
+        <div class="group">
+          <div class="rounded-2xl overflow-hidden float-shadow bg-[#0a1f12] mb-3 transition-all group-hover:-translate-y-1 group-hover:shadow-2xl group-hover:shadow-forest-900/20">
+            <lite-youtube videoid="RO5l7g7rJk8" params="list=PLORGvOV5T-44KU7B4Fevn2otJCiCqkemO" playlabel="Play: Driving playlist" style="background-image: url('https://i.ytimg.com/vi/RO5l7g7rJk8/hqdefault.jpg'); aspect-ratio: 16/9;"></lite-youtube>
+          </div>
+          <div class="flex items-start justify-between gap-3 px-1">
+            <div class="min-w-0">
+              <p class="text-[10px] font-bold text-forest-600 uppercase tracking-widest mb-1">Driving</p>
+              <h4 class="font-display text-lg font-bold text-gray-900 leading-tight">Hit it <span class="text-gradient">straighter.</span></h4>
+            </div>
+            <a href="https://www.youtube.com/playlist?list=PLORGvOV5T-44KU7B4Fevn2otJCiCqkemO" target="_blank" rel="noopener noreferrer" aria-label="Browse Driving playlist" class="shrink-0 inline-flex h-9 w-9 items-center justify-center rounded-lg bg-forest-100 text-forest-700 hover:bg-forest-200 transition-colors">
+              <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
               </svg>
-            </span>
+            </a>
           </div>
-        </a>
+        </div>
 
-        <a href="https://www.youtube.com/playlist?list=PLORGvOV5T-44i-HD1a8dDauyghFrZpzyD" target="_blank" rel="noopener noreferrer" class="group relative aspect-[4/5] rounded-2xl overflow-hidden float-shadow transition-all hover:-translate-y-1 hover:shadow-2xl hover:shadow-forest-900/20">
-          <img src="/images/sensei/approach.jpg" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-          <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-black/10"></div>
-          <span class="absolute top-4 left-4 inline-flex items-center rounded-full bg-white/15 backdrop-blur-md border border-white/30 px-2.5 py-1 text-[10px] font-bold text-white uppercase tracking-widest">Approach</span>
-          <div class="absolute bottom-0 left-0 right-0 p-5">
-            <h4 class="font-display text-2xl sm:text-3xl font-bold text-white leading-[1.05] mb-1">
-              Stick<br /><span class="text-forest-300">the green.</span>
-            </h4>
-            <span class="inline-flex items-center gap-1 text-[11px] font-bold text-white/90 uppercase tracking-widest mt-2 group-hover:text-white transition-colors">
-              Watch playlist
-              <svg class="h-3 w-3 transition-transform group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+        <!-- Approach -->
+        <div class="group">
+          <div class="rounded-2xl overflow-hidden float-shadow bg-[#0a1f12] mb-3 transition-all group-hover:-translate-y-1 group-hover:shadow-2xl group-hover:shadow-forest-900/20">
+            <lite-youtube videoid="t4PtNRJ_mjM" params="list=PLORGvOV5T-44i-HD1a8dDauyghFrZpzyD" playlabel="Play: Approach playlist" style="background-image: url('https://i.ytimg.com/vi/t4PtNRJ_mjM/hqdefault.jpg'); aspect-ratio: 16/9;"></lite-youtube>
+          </div>
+          <div class="flex items-start justify-between gap-3 px-1">
+            <div class="min-w-0">
+              <p class="text-[10px] font-bold text-forest-600 uppercase tracking-widest mb-1">Approach</p>
+              <h4 class="font-display text-lg font-bold text-gray-900 leading-tight">Stick <span class="text-gradient">the green.</span></h4>
+            </div>
+            <a href="https://www.youtube.com/playlist?list=PLORGvOV5T-44i-HD1a8dDauyghFrZpzyD" target="_blank" rel="noopener noreferrer" aria-label="Browse Approach playlist" class="shrink-0 inline-flex h-9 w-9 items-center justify-center rounded-lg bg-forest-100 text-forest-700 hover:bg-forest-200 transition-colors">
+              <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
               </svg>
-            </span>
+            </a>
           </div>
-        </a>
+        </div>
 
-        <a href="https://www.youtube.com/playlist?list=PLORGvOV5T-44yW73XsO-ZxfFptIGy9B5r" target="_blank" rel="noopener noreferrer" class="group relative aspect-[4/5] rounded-2xl overflow-hidden float-shadow transition-all hover:-translate-y-1 hover:shadow-2xl hover:shadow-forest-900/20">
-          <img src="/images/sensei/short-game.jpg" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-          <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-black/10"></div>
-          <span class="absolute top-4 left-4 inline-flex items-center rounded-full bg-white/15 backdrop-blur-md border border-white/30 px-2.5 py-1 text-[10px] font-bold text-white uppercase tracking-widest">Short Game</span>
-          <div class="absolute bottom-0 left-0 right-0 p-5">
-            <h4 class="font-display text-2xl sm:text-3xl font-bold text-white leading-[1.05] mb-1">
-              Up<br /><span class="text-forest-300">and down.</span>
-            </h4>
-            <span class="inline-flex items-center gap-1 text-[11px] font-bold text-white/90 uppercase tracking-widest mt-2 group-hover:text-white transition-colors">
-              Watch playlist
-              <svg class="h-3 w-3 transition-transform group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+        <!-- Short Game -->
+        <div class="group">
+          <div class="rounded-2xl overflow-hidden float-shadow bg-[#0a1f12] mb-3 transition-all group-hover:-translate-y-1 group-hover:shadow-2xl group-hover:shadow-forest-900/20">
+            <lite-youtube videoid="lFjWGrOcOXA" params="list=PLORGvOV5T-44yW73XsO-ZxfFptIGy9B5r" playlabel="Play: Short Game playlist" style="background-image: url('https://i.ytimg.com/vi/lFjWGrOcOXA/hqdefault.jpg'); aspect-ratio: 16/9;"></lite-youtube>
+          </div>
+          <div class="flex items-start justify-between gap-3 px-1">
+            <div class="min-w-0">
+              <p class="text-[10px] font-bold text-forest-600 uppercase tracking-widest mb-1">Short Game</p>
+              <h4 class="font-display text-lg font-bold text-gray-900 leading-tight">Up <span class="text-gradient">and down.</span></h4>
+            </div>
+            <a href="https://www.youtube.com/playlist?list=PLORGvOV5T-44yW73XsO-ZxfFptIGy9B5r" target="_blank" rel="noopener noreferrer" aria-label="Browse Short Game playlist" class="shrink-0 inline-flex h-9 w-9 items-center justify-center rounded-lg bg-forest-100 text-forest-700 hover:bg-forest-200 transition-colors">
+              <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
               </svg>
-            </span>
+            </a>
           </div>
-        </a>
+        </div>
 
-        <a href="https://www.youtube.com/playlist?list=PLORGvOV5T-478ZyDQTHOFmUi4KrUOgGvV" target="_blank" rel="noopener noreferrer" class="group relative aspect-[4/5] rounded-2xl overflow-hidden float-shadow transition-all hover:-translate-y-1 hover:shadow-2xl hover:shadow-forest-900/20">
-          <img src="/images/sensei/putting.jpg" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-          <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-black/10"></div>
-          <span class="absolute top-4 left-4 inline-flex items-center rounded-full bg-white/15 backdrop-blur-md border border-white/30 px-2.5 py-1 text-[10px] font-bold text-white uppercase tracking-widest">Putting</span>
-          <div class="absolute bottom-0 left-0 right-0 p-5">
-            <h4 class="font-display text-2xl sm:text-3xl font-bold text-white leading-[1.05] mb-1">
-              Make<br /><span class="text-forest-300">more putts.</span>
-            </h4>
-            <span class="inline-flex items-center gap-1 text-[11px] font-bold text-white/90 uppercase tracking-widest mt-2 group-hover:text-white transition-colors">
-              Watch playlist
-              <svg class="h-3 w-3 transition-transform group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+        <!-- Putting -->
+        <div class="group">
+          <div class="rounded-2xl overflow-hidden float-shadow bg-[#0a1f12] mb-3 transition-all group-hover:-translate-y-1 group-hover:shadow-2xl group-hover:shadow-forest-900/20">
+            <lite-youtube videoid="zd-KBhNTAdg" params="list=PLORGvOV5T-478ZyDQTHOFmUi4KrUOgGvV" playlabel="Play: Putting playlist" style="background-image: url('https://i.ytimg.com/vi/zd-KBhNTAdg/hqdefault.jpg'); aspect-ratio: 16/9;"></lite-youtube>
+          </div>
+          <div class="flex items-start justify-between gap-3 px-1">
+            <div class="min-w-0">
+              <p class="text-[10px] font-bold text-forest-600 uppercase tracking-widest mb-1">Putting</p>
+              <h4 class="font-display text-lg font-bold text-gray-900 leading-tight">Make <span class="text-gradient">more putts.</span></h4>
+            </div>
+            <a href="https://www.youtube.com/playlist?list=PLORGvOV5T-478ZyDQTHOFmUi4KrUOgGvV" target="_blank" rel="noopener noreferrer" aria-label="Browse Putting playlist" class="shrink-0 inline-flex h-9 w-9 items-center justify-center rounded-lg bg-forest-100 text-forest-700 hover:bg-forest-200 transition-colors">
+              <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
               </svg>
-            </span>
+            </a>
           </div>
-        </a>
+        </div>
       </div>
     </div>
 
@@ -1177,22 +1181,44 @@ const { variant, galleryImages } = Astro.props;
           </div>
         </div>
 
-        <!-- Right column: quote + inline stat pills -->
+        <!-- Right column: icon-led bento -->
         <div class="lg:col-span-5 lg:flex lg:items-center">
-          <div class="rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 p-6 sm:p-7 w-full">
-            <p class="text-[11px] font-bold text-forest-200 uppercase tracking-widest mb-4">Gateway PGA Teacher of the Year</p>
-            <p class="font-display text-xl sm:text-2xl font-bold text-white leading-snug mb-5">
-              "You can fix this. The drills work. We just have to get reps."
-            </p>
-            <p class="text-white/70 text-sm font-semibold mb-6">Ed Schwent, PGA</p>
-            <div class="border-t border-white/15 pt-5 grid grid-cols-2 gap-4">
-              <div>
-                <p class="font-display text-lg sm:text-xl font-bold text-white">Self-paced</p>
-                <p class="text-[11px] font-bold text-white/60 uppercase tracking-widest mt-0.5">Train on your time</p>
+          <div class="grid grid-cols-2 gap-3 sm:gap-4 w-full">
+            <!-- Self-paced tile -->
+            <div class="rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 p-5">
+              <div class="h-10 w-10 rounded-xl bg-forest-500/30 border border-forest-300/40 flex items-center justify-center mb-4">
+                <svg class="h-5 w-5 text-forest-200" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+                </svg>
               </div>
-              <div>
-                <p class="font-display text-lg sm:text-xl font-bold text-white">Lifetime</p>
-                <p class="text-[11px] font-bold text-white/60 uppercase tracking-widest mt-0.5">Any device, anytime</p>
+              <p class="font-display text-xl sm:text-2xl font-bold text-white leading-tight mb-1">Self-paced</p>
+              <p class="text-[11px] font-bold text-white/60 uppercase tracking-widest">Train on your time</p>
+            </div>
+
+            <!-- Lifetime tile -->
+            <div class="rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 p-5">
+              <div class="h-10 w-10 rounded-xl bg-forest-500/30 border border-forest-300/40 flex items-center justify-center mb-4">
+                <svg class="h-5 w-5 text-forest-200" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25"/>
+                </svg>
+              </div>
+              <p class="font-display text-xl sm:text-2xl font-bold text-white leading-tight mb-1">Lifetime</p>
+              <p class="text-[11px] font-bold text-white/60 uppercase tracking-widest">Any device, anytime</p>
+            </div>
+
+            <!-- Quote tile (full width) -->
+            <div class="col-span-2 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 p-5 sm:p-6">
+              <div class="flex items-start gap-4">
+                <div class="h-10 w-10 shrink-0 rounded-xl bg-forest-500/30 border border-forest-300/40 flex items-center justify-center">
+                  <svg class="h-5 w-5 text-forest-200" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M9.27 8.32C7.51 8.74 6 10.39 6 12.5c0 1.99 1.61 3.5 3.5 3.5.71 0 1.29-.21 1.79-.55C10.7 17.4 9.21 19 7 19v2c4.42 0 8-3.58 8-8 0-3.59-2.7-6.5-5.73-4.68zm9 0C16.51 8.74 15 10.39 15 12.5c0 1.99 1.61 3.5 3.5 3.5.71 0 1.29-.21 1.79-.55C19.7 17.4 18.21 19 16 19v2c4.42 0 8-3.58 8-8 0-3.59-2.7-6.5-5.73-4.68z"/>
+                  </svg>
+                </div>
+                <div class="min-w-0 flex-1">
+                  <p class="text-[11px] font-bold text-forest-200 uppercase tracking-widest mb-2">Gateway PGA Teacher of the Year</p>
+                  <p class="font-display text-base sm:text-lg font-semibold text-white leading-snug mb-2">"You can fix this. The drills work. We just have to get reps."</p>
+                  <p class="text-white/70 text-xs font-bold">Ed Schwent, PGA</p>
+                </div>
               </div>
             </div>
           </div>
