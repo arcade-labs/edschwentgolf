@@ -9,8 +9,6 @@ interface Props {
   galleryImages: GalleryImage[];
 }
 const { variant, galleryImages } = Astro.props;
-const otherVariant = variant === 'A' ? 'B' : 'A';
-const otherHref = variant === 'A' ? '/b' : '/';
 ---
 
 <style is:global>
@@ -74,6 +72,7 @@ const otherHref = variant === 'A' ? '/b' : '/';
       <div class="hidden md:flex items-center gap-8">
         <a href="#about" class="text-sm font-semibold text-forest-900 hover:text-forest-600 transition-colors">About</a>
         <a href="#method" class="text-sm font-semibold text-forest-900 hover:text-forest-600 transition-colors">Method</a>
+        <a href="#watch" class="text-sm font-semibold text-forest-900 hover:text-forest-600 transition-colors">Watch</a>
         {galleryImages.length > 0 && (
           <a href="#gallery" class="text-sm font-semibold text-forest-900 hover:text-forest-600 transition-colors">Gallery</a>
         )}
@@ -944,6 +943,156 @@ const otherHref = variant === 'A' ? '/b' : '/';
   </div>
 </section>
 
+<!-- Watch & Learn (Golf Sensei content, shared) -->
+<section id="watch" class="py-16 sm:py-24 px-4 sm:px-6 lg:px-8">
+  <div class="mx-auto max-w-7xl">
+    <!-- Header -->
+    <div class="text-center max-w-2xl mx-auto mb-12">
+      <div class="inline-flex items-center gap-2 glass-card rounded-full px-4 py-2 mb-6">
+        <svg class="h-3.5 w-3.5 text-forest-600" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+        </svg>
+        <span class="text-xs font-semibold text-forest-700 uppercase tracking-wider">Golf Sensei</span>
+      </div>
+      <h2 class="font-display text-4xl sm:text-5xl font-bold text-gray-900 leading-tight mb-5">
+        Free instruction <span class="text-gradient">on YouTube.</span>
+      </h2>
+      <p class="text-gray-900 text-lg leading-relaxed">
+        Drills, breakdowns, and full-swing tips from a 50,000-lesson career. Published free as <a href="https://youtube.com/@thegolfsensei" target="_blank" rel="noopener noreferrer" class="font-semibold text-forest-700 hover:text-forest-600">@thegolfsensei</a>.
+      </p>
+    </div>
+
+    <!-- Playlist cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-10">
+      <a href="https://www.youtube.com/playlist?list=PLORGvOV5T-44KU7B4Fevn2otJCiCqkemO" target="_blank" rel="noopener noreferrer" class="group glass-card rounded-2xl p-6 transition-all hover:-translate-y-1 hover:shadow-lg hover:shadow-forest-600/10">
+        <div class="h-10 w-10 rounded-xl bg-forest-100 flex items-center justify-center mb-4 group-hover:bg-forest-200 transition-colors">
+          <svg class="h-5 w-5 text-forest-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 17 9 11l4 4 8-8M14 5h7v7"/>
+          </svg>
+        </div>
+        <h3 class="font-display text-lg font-bold text-gray-900 mb-1">Driving</h3>
+        <p class="text-sm text-gray-700 leading-relaxed mb-3">Hit straighter, longer drives off the tee.</p>
+        <span class="text-sm font-semibold text-forest-700 group-hover:text-forest-600 inline-flex items-center gap-1">
+          Watch playlist
+          <svg class="h-4 w-4 transition-transform group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
+          </svg>
+        </span>
+      </a>
+
+      <a href="https://www.youtube.com/playlist?list=PLORGvOV5T-44i-HD1a8dDauyghFrZpzyD" target="_blank" rel="noopener noreferrer" class="group glass-card rounded-2xl p-6 transition-all hover:-translate-y-1 hover:shadow-lg hover:shadow-forest-600/10">
+        <div class="h-10 w-10 rounded-xl bg-forest-100 flex items-center justify-center mb-4 group-hover:bg-forest-200 transition-colors">
+          <svg class="h-5 w-5 text-forest-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <circle cx="12" cy="12" r="9"/>
+            <circle cx="12" cy="12" r="5"/>
+            <circle cx="12" cy="12" r="1.5" fill="currentColor"/>
+          </svg>
+        </div>
+        <h3 class="font-display text-lg font-bold text-gray-900 mb-1">Approach</h3>
+        <p class="text-sm text-gray-700 leading-relaxed mb-3">Hit more greens with sharper iron play.</p>
+        <span class="text-sm font-semibold text-forest-700 group-hover:text-forest-600 inline-flex items-center gap-1">
+          Watch playlist
+          <svg class="h-4 w-4 transition-transform group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
+          </svg>
+        </span>
+      </a>
+
+      <a href="https://www.youtube.com/playlist?list=PLORGvOV5T-44yW73XsO-ZxfFptIGy9B5r" target="_blank" rel="noopener noreferrer" class="group glass-card rounded-2xl p-6 transition-all hover:-translate-y-1 hover:shadow-lg hover:shadow-forest-600/10">
+        <div class="h-10 w-10 rounded-xl bg-forest-100 flex items-center justify-center mb-4 group-hover:bg-forest-200 transition-colors">
+          <svg class="h-5 w-5 text-forest-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 21c4-8 11-8 14-1"/>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 5v8M19 5l-6 2 6 2"/>
+          </svg>
+        </div>
+        <h3 class="font-display text-lg font-bold text-gray-900 mb-1">Short Game</h3>
+        <p class="text-sm text-gray-700 leading-relaxed mb-3">Get up and down from anywhere around the green.</p>
+        <span class="text-sm font-semibold text-forest-700 group-hover:text-forest-600 inline-flex items-center gap-1">
+          Watch playlist
+          <svg class="h-4 w-4 transition-transform group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
+          </svg>
+        </span>
+      </a>
+
+      <a href="https://www.youtube.com/playlist?list=PLORGvOV5T-478ZyDQTHOFmUi4KrUOgGvV" target="_blank" rel="noopener noreferrer" class="group glass-card rounded-2xl p-6 transition-all hover:-translate-y-1 hover:shadow-lg hover:shadow-forest-600/10">
+        <div class="h-10 w-10 rounded-xl bg-forest-100 flex items-center justify-center mb-4 group-hover:bg-forest-200 transition-colors">
+          <svg class="h-5 w-5 text-forest-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <ellipse cx="12" cy="17" rx="8" ry="2.5"/>
+            <circle cx="8" cy="14" r="1.5" fill="currentColor"/>
+          </svg>
+        </div>
+        <h3 class="font-display text-lg font-bold text-gray-900 mb-1">Putting</h3>
+        <p class="text-sm text-gray-700 leading-relaxed mb-3">Make more putts with a repeatable stroke.</p>
+        <span class="text-sm font-semibold text-forest-700 group-hover:text-forest-600 inline-flex items-center gap-1">
+          Watch playlist
+          <svg class="h-4 w-4 transition-transform group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
+          </svg>
+        </span>
+      </a>
+    </div>
+
+    <!-- Two callout cards: lead magnet + online training -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+      <a href="https://www.golfsenseitraining.com" target="_blank" rel="noopener noreferrer" class="group glass-card rounded-2xl p-7 transition-all hover:-translate-y-1 hover:shadow-lg hover:shadow-forest-600/10">
+        <div class="flex items-start gap-4">
+          <div class="h-12 w-12 shrink-0 rounded-xl bg-forest-100 flex items-center justify-center group-hover:bg-forest-200 transition-colors">
+            <svg class="h-6 w-6 text-forest-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 5.25a3 3 0 0 1 3 3m3 0a6 6 0 0 1-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H8.25v2.25H6v2.25H2.25v-2.818c0-.597.237-1.17.659-1.591l6.499-6.499c.404-.404.527-1 .43-1.563A6 6 0 1 1 21.75 8.25Z"/>
+            </svg>
+          </div>
+          <div class="flex-1">
+            <p class="text-xs font-semibold text-forest-600 uppercase tracking-wider mb-1.5">Free guide</p>
+            <h3 class="font-display text-xl font-bold text-gray-900 mb-2 leading-tight">5 Keys to Better Golf</h3>
+            <p class="text-sm text-gray-700 leading-relaxed mb-3">A free video and PDF covering Ed's five fundamentals every player should master.</p>
+            <span class="text-sm font-semibold text-forest-700 group-hover:text-forest-600 inline-flex items-center gap-1">
+              Get the free guide
+              <svg class="h-4 w-4 transition-transform group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
+              </svg>
+            </span>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://www.golfsenseitraining.com/slice" target="_blank" rel="noopener noreferrer" class="group glass-card rounded-2xl p-7 transition-all hover:-translate-y-1 hover:shadow-lg hover:shadow-forest-600/10">
+        <div class="flex items-start gap-4">
+          <div class="h-12 w-12 shrink-0 rounded-xl bg-forest-100 flex items-center justify-center group-hover:bg-forest-200 transition-colors">
+            <svg class="h-6 w-6 text-forest-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"/>
+            </svg>
+          </div>
+          <div class="flex-1">
+            <p class="text-xs font-semibold text-forest-600 uppercase tracking-wider mb-1.5">Online training</p>
+            <h3 class="font-display text-xl font-bold text-gray-900 mb-2 leading-tight">Eliminate Your Slice</h3>
+            <p class="text-sm text-gray-700 leading-relaxed mb-3">Train with Ed online when in-person isn't an option. A focused course on hitting it straight.</p>
+            <span class="text-sm font-semibold text-forest-700 group-hover:text-forest-600 inline-flex items-center gap-1">
+              Start the course
+              <svg class="h-4 w-4 transition-transform group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
+              </svg>
+            </span>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Subscribe CTA -->
+    <div class="text-center">
+      <a href="https://youtube.com/@thegolfsensei" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-full bg-white border border-forest-200 px-6 py-3 text-sm font-semibold text-forest-800 hover:border-forest-400 hover:-translate-y-0.5 transition-all">
+        <svg class="h-4 w-4 text-forest-600" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+        </svg>
+        Subscribe to @thegolfsensei
+        <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
 <!-- Recognition (shared) -->
 {galleryImages.length > 0 && (
   <section id="gallery" class="py-16 sm:py-24 px-4 sm:px-6 lg:px-8">
@@ -999,7 +1148,7 @@ const otherHref = variant === 'A' ? '/b' : '/';
 <!-- Footer (shared) -->
 <footer id="contact" class="pt-20 pb-10 bg-[#0a0a0a]">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 pb-14 border-b border-white/20">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 pb-14 border-b border-white/20">
       <div>
         <p class="font-display text-2xl font-bold text-white tracking-tight mb-4">Ed Schwent <span class="text-white/80">Golf</span></p>
         <p class="text-white/60 text-sm leading-relaxed max-w-xs">Gateway PGA Teacher of the Year. Golf Digest top-ranked instructor. Your game, reimagined.</p>
@@ -1022,6 +1171,31 @@ const otherHref = variant === 'A' ? '/b' : '/';
               <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" /></svg>
             </div>
             Ed@edschwentgolf.com
+          </a>
+        </div>
+      </div>
+      <div>
+        <h3 class="text-xs font-bold text-white uppercase tracking-widest mb-4">Golf Sensei</h3>
+        <div class="space-y-3">
+          <a href="https://youtube.com/@thegolfsensei" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-3 text-white/70 text-sm hover:text-white transition-colors">
+            <div class="h-8 w-8 rounded-lg bg-white/10 flex items-center justify-center group-hover:bg-forest-500/30 transition-colors">
+              <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+              </svg>
+            </div>
+            YouTube channel
+          </a>
+          <a href="https://golfsenseitraining.com" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-3 text-white/70 text-sm hover:text-white transition-colors">
+            <div class="h-8 w-8 rounded-lg bg-white/10 flex items-center justify-center group-hover:bg-forest-500/30 transition-colors">
+              <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"/></svg>
+            </div>
+            golfsenseitraining.com
+          </a>
+          <a href="https://golfsenseitraining.com" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-3 text-white/70 text-sm hover:text-white transition-colors">
+            <div class="h-8 w-8 rounded-lg bg-white/10 flex items-center justify-center group-hover:bg-forest-500/30 transition-colors">
+              <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 9v.906a2.25 2.25 0 0 1-1.183 1.981l-6.478 3.488M2.25 9v.906a2.25 2.25 0 0 0 1.183 1.981l6.478 3.488m8.839 2.51-4.66-2.51m0 0-1.023-.55a2.25 2.25 0 0 0-2.134 0l-1.022.55m0 0-4.661 2.51m16.5 1.615a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V8.844a2.25 2.25 0 0 1 1.183-1.981l7.5-4.039a2.25 2.25 0 0 1 2.134 0l7.5 4.039a2.25 2.25 0 0 1 1.183 1.98V19.5Z"/></svg>
+            </div>
+            Newsletter signup
           </a>
         </div>
       </div>
@@ -1063,20 +1237,6 @@ const otherHref = variant === 'A' ? '/b' : '/';
     toggle();
   })();
 </script>
-
-<!-- Preview-only layout switcher -->
-<a
-  href={otherHref}
-  class="fixed bottom-6 right-6 z-50 inline-flex items-center gap-2 rounded-full glass px-4 py-2.5 text-sm font-semibold text-forest-800 hover:text-forest-600 transition-colors float-shadow"
-  style="background:rgba(255,255,255,0.9);"
->
-  <span class="text-[10px] font-bold uppercase tracking-widest text-forest-500">Preview</span>
-  <span>Layout {variant}</span>
-  <svg class="h-4 w-4 text-forest-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-    <path stroke-linecap="round" stroke-linejoin="round" d="M8 7h12m0 0-4-4m4 4-4 4M16 17H4m0 0 4 4m-4-4 4-4" />
-  </svg>
-  <span class="text-forest-400">{otherVariant}</span>
-</a>
 
 <script is:inline src="https://assets.calendly.com/assets/external/widget.js" async></script>
 <script is:inline>
